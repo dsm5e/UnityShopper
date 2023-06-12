@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C1197832A30DC8800874341 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1197822A30DC8800874341 /* CheckoutView.swift */; };
+		3C1197A12A3241C900874341 /* TenorSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197A02A3241C900874341 /* TenorSans-Regular.ttf */; };
+		3C1197A42A3241DB00874341 /* Raleway-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197A22A3241DB00874341 /* Raleway-VariableFont_wght.ttf */; };
+		3C1197A52A3241DB00874341 /* Raleway-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197A32A3241DB00874341 /* Raleway-Italic-VariableFont_wght.ttf */; };
+		3C1197BA2A3241FE00874341 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197A82A3241FE00874341 /* Raleway-Medium.ttf */; };
+		3C1197BB2A3241FE00874341 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197A92A3241FE00874341 /* Raleway-Bold.ttf */; };
+		3C1197BC2A3241FE00874341 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197AA2A3241FE00874341 /* Raleway-ExtraLightItalic.ttf */; };
+		3C1197BD2A3241FE00874341 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197AB2A3241FE00874341 /* Raleway-ExtraLight.ttf */; };
+		3C1197BE2A3241FE00874341 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197AC2A3241FE00874341 /* Raleway-SemiBoldItalic.ttf */; };
+		3C1197BF2A3241FE00874341 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197AD2A3241FE00874341 /* Raleway-ThinItalic.ttf */; };
+		3C1197C02A3241FE00874341 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197AE2A3241FE00874341 /* Raleway-Light.ttf */; };
+		3C1197C12A3241FE00874341 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197AF2A3241FE00874341 /* Raleway-ExtraBold.ttf */; };
+		3C1197C22A3241FE00874341 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B02A3241FE00874341 /* Raleway-MediumItalic.ttf */; };
+		3C1197C32A3241FE00874341 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B12A3241FE00874341 /* Raleway-Thin.ttf */; };
+		3C1197C42A3241FE00874341 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B22A3241FE00874341 /* Raleway-Black.ttf */; };
+		3C1197C52A3241FE00874341 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B32A3241FE00874341 /* Raleway-BoldItalic.ttf */; };
+		3C1197C62A3241FE00874341 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B42A3241FE00874341 /* Raleway-ExtraBoldItalic.ttf */; };
+		3C1197C72A3241FE00874341 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B52A3241FE00874341 /* Raleway-LightItalic.ttf */; };
+		3C1197C82A3241FE00874341 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B62A3241FE00874341 /* Raleway-Italic.ttf */; };
+		3C1197C92A3241FE00874341 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B72A3241FE00874341 /* Raleway-BlackItalic.ttf */; };
+		3C1197CA2A3241FE00874341 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B82A3241FE00874341 /* Raleway-SemiBold.ttf */; };
+		3C1197CB2A3241FE00874341 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1197B92A3241FE00874341 /* Raleway-Regular.ttf */; };
+		3C1197D12A32488800874341 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1197D02A32488800874341 /* FontManager.swift */; };
+		3C1197D42A324AA500874341 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1197D32A324AA500874341 /* View.swift */; };
+		3C1197D62A324F5600874341 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1197D52A324F5600874341 /* CustomFont.swift */; };
+		3C1197DB2A32564900874341 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1197DA2A32564900874341 /* TabBarModel.swift */; };
+		3C1197DD2A325B3700874341 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1197DC2A325B3700874341 /* Colors.swift */; };
+		3C1197DF2A325BC000874341 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1197DE2A325BC000874341 /* Icons.swift */; };
+		3C88D84A2A2E7D2C00B8F8D1 /* UnityShopperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D8492A2E7D2C00B8F8D1 /* UnityShopperApp.swift */; };
+		3C88D84C2A2E7D2C00B8F8D1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D84B2A2E7D2C00B8F8D1 /* RootView.swift */; };
+		3C88D84E2A2E7D2D00B8F8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C88D84D2A2E7D2D00B8F8D1 /* Assets.xcassets */; };
+		3C88D8512A2E7D2D00B8F8D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C88D8502A2E7D2D00B8F8D1 /* Preview Assets.xcassets */; };
+		3C88D8652A2E7DD400B8F8D1 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D8642A2E7DD400B8F8D1 /* SplashScreen.swift */; };
+		3C88D8692A2E829600B8F8D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D8682A2E829600B8F8D1 /* HomeView.swift */; };
+		3C88D86B2A2E82A200B8F8D1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D86A2A2E82A200B8F8D1 /* OrderView.swift */; };
+		3C88D86D2A2E82AE00B8F8D1 /* SelectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D86C2A2E82AE00B8F8D1 /* SelectionsView.swift */; };
+		3C88D86F2A2E82B700B8F8D1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D86E2A2E82B700B8F8D1 /* ProfileView.swift */; };
+		3CD31E522A2FF19600021255 /* HomeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD31E512A2FF19600021255 /* HomeRowView.swift */; };
+		3CFEDBA62A375BD4009470DA /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEDBA52A375BD4009470DA /* HomeModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C1197822A30DC8800874341 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		3C1197A02A3241C900874341 /* TenorSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TenorSans-Regular.ttf"; sourceTree = "<group>"; };
+		3C1197A22A3241DB00874341 /* Raleway-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		3C1197A32A3241DB00874341 /* Raleway-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		3C1197A82A3241FE00874341 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		3C1197A92A3241FE00874341 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		3C1197AA2A3241FE00874341 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3C1197AB2A3241FE00874341 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3C1197AC2A3241FE00874341 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3C1197AD2A3241FE00874341 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3C1197AE2A3241FE00874341 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		3C1197AF2A3241FE00874341 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3C1197B02A3241FE00874341 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3C1197B12A3241FE00874341 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		3C1197B22A3241FE00874341 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		3C1197B32A3241FE00874341 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3C1197B42A3241FE00874341 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3C1197B52A3241FE00874341 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		3C1197B62A3241FE00874341 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		3C1197B72A3241FE00874341 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3C1197B82A3241FE00874341 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		3C1197B92A3241FE00874341 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		3C1197CC2A3246A200874341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3C1197D02A32488800874341 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		3C1197D32A324AA500874341 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3C1197D52A324F5600874341 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		3C1197DA2A32564900874341 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		3C1197DC2A325B3700874341 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3C1197DE2A325BC000874341 /* Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		3C88D8462A2E7D2C00B8F8D1 /* UnityShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C88D8492A2E7D2C00B8F8D1 /* UnityShopperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityShopperApp.swift; sourceTree = "<group>"; };
+		3C88D84B2A2E7D2C00B8F8D1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3C88D84D2A2E7D2D00B8F8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C88D8502A2E7D2D00B8F8D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C88D8642A2E7DD400B8F8D1 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		3C88D8682A2E829600B8F8D1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3C88D86A2A2E82A200B8F8D1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		3C88D86C2A2E82AE00B8F8D1 /* SelectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionsView.swift; sourceTree = "<group>"; };
+		3C88D86E2A2E82B700B8F8D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3CD31E512A2FF19600021255 /* HomeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRowView.swift; sourceTree = "<group>"; };
+		3CFEDBA52A375BD4009470DA /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C88D8432A2E7D2C00B8F8D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C1197812A30DC5E00874341 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				3C88D8682A2E829600B8F8D1 /* HomeView.swift */,
+				3CD31E512A2FF19600021255 /* HomeRowView.swift */,
+				3CFEDBA82A3761A6009470DA /* New Group */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		3C1197A62A3241E000874341 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197A32A3241DB00874341 /* Raleway-Italic-VariableFont_wght.ttf */,
+				3C1197A22A3241DB00874341 /* Raleway-VariableFont_wght.ttf */,
+				3C1197A72A3241ED00874341 /* Static */,
+			);
+			path = Raleway;
+			sourceTree = "<group>";
+		};
+		3C1197A72A3241ED00874341 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197B22A3241FE00874341 /* Raleway-Black.ttf */,
+				3C1197B72A3241FE00874341 /* Raleway-BlackItalic.ttf */,
+				3C1197A92A3241FE00874341 /* Raleway-Bold.ttf */,
+				3C1197B32A3241FE00874341 /* Raleway-BoldItalic.ttf */,
+				3C1197AF2A3241FE00874341 /* Raleway-ExtraBold.ttf */,
+				3C1197B42A3241FE00874341 /* Raleway-ExtraBoldItalic.ttf */,
+				3C1197AB2A3241FE00874341 /* Raleway-ExtraLight.ttf */,
+				3C1197AA2A3241FE00874341 /* Raleway-ExtraLightItalic.ttf */,
+				3C1197B62A3241FE00874341 /* Raleway-Italic.ttf */,
+				3C1197AE2A3241FE00874341 /* Raleway-Light.ttf */,
+				3C1197B52A3241FE00874341 /* Raleway-LightItalic.ttf */,
+				3C1197A82A3241FE00874341 /* Raleway-Medium.ttf */,
+				3C1197B02A3241FE00874341 /* Raleway-MediumItalic.ttf */,
+				3C1197B92A3241FE00874341 /* Raleway-Regular.ttf */,
+				3C1197B82A3241FE00874341 /* Raleway-SemiBold.ttf */,
+				3C1197AC2A3241FE00874341 /* Raleway-SemiBoldItalic.ttf */,
+				3C1197B12A3241FE00874341 /* Raleway-Thin.ttf */,
+				3C1197AD2A3241FE00874341 /* Raleway-ThinItalic.ttf */,
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
+		3C1197CD2A32484400874341 /* Tenor */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197A02A3241C900874341 /* TenorSans-Regular.ttf */,
+			);
+			path = Tenor;
+			sourceTree = "<group>";
+		};
+		3C1197D22A32497900874341 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197D52A324F5600874341 /* CustomFont.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		3C88D83D2A2E7D2C00B8F8D1 = {
+			isa = PBXGroup;
+			children = (
+				3C88D8482A2E7D2C00B8F8D1 /* UnityShopper */,
+				3C88D8472A2E7D2C00B8F8D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C88D8472A2E7D2C00B8F8D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C88D8462A2E7D2C00B8F8D1 /* UnityShopper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C88D8482A2E7D2C00B8F8D1 /* UnityShopper */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197CC2A3246A200874341 /* Info.plist */,
+				3C88D8492A2E7D2C00B8F8D1 /* UnityShopperApp.swift */,
+				3C88D8642A2E7DD400B8F8D1 /* SplashScreen.swift */,
+				3C88D84B2A2E7D2C00B8F8D1 /* RootView.swift */,
+				3C88D8592A2E7D5C00B8F8D1 /* Model */,
+				3C88D8582A2E7D5100B8F8D1 /* ViewModel */,
+				3C88D8572A2E7D4500B8F8D1 /* View */,
+				3C88D8672A2E7DEE00B8F8D1 /* AuthManager */,
+				3C88D85A2A2E7D6A00B8F8D1 /* Extensions */,
+				3C88D84D2A2E7D2D00B8F8D1 /* Assets.xcassets */,
+				3C88D84F2A2E7D2D00B8F8D1 /* Preview Content */,
+			);
+			path = UnityShopper;
+			sourceTree = "<group>";
+		};
+		3C88D84F2A2E7D2D00B8F8D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C88D8502A2E7D2D00B8F8D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C88D8572A2E7D4500B8F8D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197812A30DC5E00874341 /* HomeView */,
+				3C1197822A30DC8800874341 /* CheckoutView.swift */,
+				3C88D86A2A2E82A200B8F8D1 /* OrderView.swift */,
+				3C88D86C2A2E82AE00B8F8D1 /* SelectionsView.swift */,
+				3C88D86E2A2E82B700B8F8D1 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C88D8582A2E7D5100B8F8D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C88D8592A2E7D5C00B8F8D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197DA2A32564900874341 /* TabBarModel.swift */,
+				3CFEDBA52A375BD4009470DA /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C88D85A2A2E7D6A00B8F8D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197D22A32497900874341 /* Modifiers */,
+				3C1197D32A324AA500874341 /* View.swift */,
+				3C1197DE2A325BC000874341 /* Icons.swift */,
+				3C1197DC2A325B3700874341 /* Colors.swift */,
+				3C1197D02A32488800874341 /* FontManager.swift */,
+				3C88D85B2A2E7D7400B8F8D1 /* Fonts */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C88D85B2A2E7D7400B8F8D1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3C1197CD2A32484400874341 /* Tenor */,
+				3C1197A62A3241E000874341 /* Raleway */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3C88D8672A2E7DEE00B8F8D1 /* AuthManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		3CFEDBA82A3761A6009470DA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C88D8452A2E7D2C00B8F8D1 /* UnityShopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C88D8542A2E7D2D00B8F8D1 /* Build configuration list for PBXNativeTarget "UnityShopper" */;
+			buildPhases = (
+				3C88D8422A2E7D2C00B8F8D1 /* Sources */,
+				3C88D8432A2E7D2C00B8F8D1 /* Frameworks */,
+				3C88D8442A2E7D2C00B8F8D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnityShopper;
+			productName = UnityShopper;
+			productReference = 3C88D8462A2E7D2C00B8F8D1 /* UnityShopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C88D83E2A2E7D2C00B8F8D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3C88D8452A2E7D2C00B8F8D1 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 3C88D8412A2E7D2C00B8F8D1 /* Build configuration list for PBXProject "UnityShopper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C88D83D2A2E7D2C00B8F8D1;
+			productRefGroup = 3C88D8472A2E7D2C00B8F8D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C88D8452A2E7D2C00B8F8D1 /* UnityShopper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C88D8442A2E7D2C00B8F8D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1197C32A3241FE00874341 /* Raleway-Thin.ttf in Resources */,
+				3C1197BB2A3241FE00874341 /* Raleway-Bold.ttf in Resources */,
+				3C1197C92A3241FE00874341 /* Raleway-BlackItalic.ttf in Resources */,
+				3C1197A12A3241C900874341 /* TenorSans-Regular.ttf in Resources */,
+				3C1197BD2A3241FE00874341 /* Raleway-ExtraLight.ttf in Resources */,
+				3C1197C02A3241FE00874341 /* Raleway-Light.ttf in Resources */,
+				3C1197BA2A3241FE00874341 /* Raleway-Medium.ttf in Resources */,
+				3C1197C82A3241FE00874341 /* Raleway-Italic.ttf in Resources */,
+				3C1197C12A3241FE00874341 /* Raleway-ExtraBold.ttf in Resources */,
+				3C1197BF2A3241FE00874341 /* Raleway-ThinItalic.ttf in Resources */,
+				3C1197C62A3241FE00874341 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				3C1197A42A3241DB00874341 /* Raleway-VariableFont_wght.ttf in Resources */,
+				3C1197C52A3241FE00874341 /* Raleway-BoldItalic.ttf in Resources */,
+				3C1197BE2A3241FE00874341 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				3C1197C22A3241FE00874341 /* Raleway-MediumItalic.ttf in Resources */,
+				3C1197BC2A3241FE00874341 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				3C1197C72A3241FE00874341 /* Raleway-LightItalic.ttf in Resources */,
+				3C1197C42A3241FE00874341 /* Raleway-Black.ttf in Resources */,
+				3C88D8512A2E7D2D00B8F8D1 /* Preview Assets.xcassets in Resources */,
+				3C88D84E2A2E7D2D00B8F8D1 /* Assets.xcassets in Resources */,
+				3C1197CB2A3241FE00874341 /* Raleway-Regular.ttf in Resources */,
+				3C1197A52A3241DB00874341 /* Raleway-Italic-VariableFont_wght.ttf in Resources */,
+				3C1197CA2A3241FE00874341 /* Raleway-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C88D8422A2E7D2C00B8F8D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C88D86D2A2E82AE00B8F8D1 /* SelectionsView.swift in Sources */,
+				3C1197DD2A325B3700874341 /* Colors.swift in Sources */,
+				3C1197DF2A325BC000874341 /* Icons.swift in Sources */,
+				3CFEDBA62A375BD4009470DA /* HomeModel.swift in Sources */,
+				3CD31E522A2FF19600021255 /* HomeRowView.swift in Sources */,
+				3C88D8652A2E7DD400B8F8D1 /* SplashScreen.swift in Sources */,
+				3C88D8692A2E829600B8F8D1 /* HomeView.swift in Sources */,
+				3C1197DB2A32564900874341 /* TabBarModel.swift in Sources */,
+				3C88D84C2A2E7D2C00B8F8D1 /* RootView.swift in Sources */,
+				3C1197D12A32488800874341 /* FontManager.swift in Sources */,
+				3C88D84A2A2E7D2C00B8F8D1 /* UnityShopperApp.swift in Sources */,
+				3C88D86F2A2E82B700B8F8D1 /* ProfileView.swift in Sources */,
+				3C88D86B2A2E82A200B8F8D1 /* OrderView.swift in Sources */,
+				3C1197D62A324F5600874341 /* CustomFont.swift in Sources */,
+				3C1197D42A324AA500874341 /* View.swift in Sources */,
+				3C1197832A30DC8800874341 /* CheckoutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C88D8522A2E7D2D00B8F8D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C88D8532A2E7D2D00B8F8D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C88D8552A2E7D2D00B8F8D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UnityShopper/Preview Content\"";
+				DEVELOPMENT_TEAM = A5PP5569YS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnityShopper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsm5e.UnityShopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C88D8562A2E7D2D00B8F8D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UnityShopper/Preview Content\"";
+				DEVELOPMENT_TEAM = A5PP5569YS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnityShopper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsm5e.UnityShopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C88D8412A2E7D2C00B8F8D1 /* Build configuration list for PBXProject "UnityShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C88D8522A2E7D2D00B8F8D1 /* Debug */,
+				3C88D8532A2E7D2D00B8F8D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C88D8542A2E7D2D00B8F8D1 /* Build configuration list for PBXNativeTarget "UnityShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C88D8552A2E7D2D00B8F8D1 /* Debug */,
+				3C88D8562A2E7D2D00B8F8D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C88D83E2A2E7D2C00B8F8D1 /* Project object */;
+}
