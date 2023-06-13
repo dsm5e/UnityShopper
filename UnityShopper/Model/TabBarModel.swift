@@ -16,3 +16,5 @@ struct TabBarModel: Hashable {
         TabBarModel(text: "ПРОФИЛЬ", icon: "Profile")
     ]
 }
+
+

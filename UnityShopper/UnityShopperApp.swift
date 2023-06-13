@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct UnityShopperApp: App {
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {

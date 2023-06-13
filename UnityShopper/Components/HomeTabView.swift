@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeRowView: View {
+struct HomeTabView: View {
     
     @State var title: String
     @State var image: String
@@ -24,12 +24,11 @@ struct HomeRowView: View {
                     .customFont(font: FontManager.Raleway.semiBold)
                     .padding(15)
             })
-            .padding(.horizontal, 20)
     }
 }
 
 struct CartRowView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeRowView(title: "ОФОРМИТЬ ЗАКАЗ", image: "1")
+        HomeTabView(title: "ОФОРМИТЬ ЗАКАЗ", image: "buyer")
     }
 }

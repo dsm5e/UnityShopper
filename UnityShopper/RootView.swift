@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-    
+
 struct RootView: View {
     
     init() {
@@ -17,16 +17,18 @@ struct RootView: View {
     @State private var selectedTab = "Home"
     
     var body: some View {
-        
-        Header()
-        
-        TabBar(selectedTab: $selectedTab)
+        NavigationStack {
+            VStack {
+                Header()
+                TabBar(selectedTab: $selectedTab)
+            }
+        }
     }
 }
 
 struct Header: View {
     var body: some View {
-        HStack {
+        ZStack {
             Image("USLogo")
                 .resizable()
                 .scaledToFit()
@@ -46,7 +48,7 @@ struct TabBar: View {
                 HomeView()
                     .tag("Home")
                 
-                OrderView()
+                CheckoutView()
                     .tag("Order")
                 
                 SelectionsView()
