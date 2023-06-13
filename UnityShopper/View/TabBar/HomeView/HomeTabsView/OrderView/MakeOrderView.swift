@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MakeOrderView: View {
+    @Environment(\.dismiss) var dismiss
     @State private var isRegister: Bool = false
     @State private var email: String = ""
     @State private var password: String = ""
@@ -36,14 +37,16 @@ struct MakeOrderView: View {
                     .customFont(font: FontManager.main, size: 17)
                     .multilineTextAlignment(.center)
             }
+            .navigationBarBackButtonHidden(false)
         } else {
             VStack {
-                HStack {
-                    Text("ОФОРМИТЬ ЗАКАЗ \n№ # # #")
+                VStack {
+                    Text("ОФОРМИТЬ ЗАКАЗ")
                         .customFont(font: FontManager.main)
-                        .multilineTextAlignment(.center)
+                    Text("№ # # #")
+                        .customFont(font: FontManager.main)
                 }
-                .padding(30)
+                .padding(15)
                 
                 VStack {
                     TextField("НАИМЕНОВАНИЕ ТОВАРА", text: $email)
@@ -132,7 +135,7 @@ struct MakeOrderView: View {
                         .textInputAutocapitalization(.never)
                         .disableAutocorrection(true)
                         .focused($lastNameFocused)
-
+                    
                     TextField("КОЛЛИЧЕСТВО", text: $lastName)
                         .customFont(font: FontManager.Raleway.regular, size: 15)
                         .textContentType(.familyName)
@@ -144,7 +147,6 @@ struct MakeOrderView: View {
                         .textInputAutocapitalization(.never)
                         .disableAutocorrection(true)
                         .focused($lastNameFocused)
-
                 }
                 .padding()
                 HStack {
@@ -154,11 +156,11 @@ struct MakeOrderView: View {
                         .customFont(font: FontManager.Raleway.regular, size: 15)
                 }
                 HStack {
-                        Text("Добавить товар")
-                            .customFont(font: FontManager.Raleway.regular, size: 10)
+                    Text("Добавить товар")
+                        .customFont(font: FontManager.Raleway.regular, size: 10)
                     Spacer()
-                        Text("Удалить товар")
-                            .customFont(font: FontManager.Raleway.regular, size: 10)
+                    Text("Удалить товар")
+                        .customFont(font: FontManager.Raleway.regular, size: 10)
                 }
                 .padding()
                 NavigationLink {
@@ -167,7 +169,16 @@ struct MakeOrderView: View {
                     MainButtonView(title: "Далее",size: 120)
                 }
                 .padding(.top, 40)
+                Button {
+                    dismiss()
+                } label: {
+                    Text("назад")
+                        .customFont(font: FontManager.main, size: 15)
+                }
+                .padding(.top, 10)
+                Spacer()
             }
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

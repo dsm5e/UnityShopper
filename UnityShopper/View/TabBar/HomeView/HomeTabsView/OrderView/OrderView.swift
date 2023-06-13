@@ -9,12 +9,13 @@ import SwiftUI
 
 struct OrderView: View {
     @AppStorage("log_Status") var log_Status: Bool = false
+    @Environment(\.dismiss) var dismiss
+    @State var isRootView: Bool = true
 
     @State private var selectedTab = "Home"
 
     var body: some View {
         VStack {
-            Header()
             Spacer()
             if log_Status {
                 MakeOrderView()
@@ -22,10 +23,8 @@ struct OrderView: View {
                 LoginView()
             }
             Spacer()
-            Button("print") {
-                print(log_Status.description)
-            }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

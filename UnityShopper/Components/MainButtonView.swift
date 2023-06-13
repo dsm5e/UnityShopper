@@ -17,7 +17,7 @@ import SwiftUI
 struct MainButtonView: View {
     
     @State var title: String
-    @State var size: CGFloat = 100
+    @State var size: CGFloat = 120
     
     var body: some View {
         Text(title)

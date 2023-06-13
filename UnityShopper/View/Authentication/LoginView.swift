@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     @AppStorage("log_Status") var log_Status: Bool?
+    @Environment(\.dismiss) var dismiss
+    @State var isRootView: Bool = true
     
     @State private var email: String = ""
     @State private var password: String = ""
@@ -87,8 +89,16 @@ struct LoginView: View {
                 }
             }
             .padding(.top, 40)
+            
+            Button {
+                dismiss()
+            } label: {
+                Text("На главную")
+                    .customFont(font: FontManager.main, size: 15)
+            }
+            .padding()
         }
-        
+        .navigationBarBackButtonHidden(true)
     }
 }
 

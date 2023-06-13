@@ -1,14 +1,14 @@
 //
-//  RegistrationView.swift
+//  BuyerView.swift
 //  UnityShopper
 //
-//  Created by dsm 5e on 13.06.2023.
+//  Created by dsm 5e on 12.06.2023.
 //
 
 import SwiftUI
 
-struct RegistrationView: View {
-    @State private var isRegister: Bool = false
+struct BuyerAcceptView: View {
+    
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var passwordConform: String = ""
@@ -16,6 +16,12 @@ struct RegistrationView: View {
     @State private var lastName: String = ""
     @State private var phoneNumber: String = ""
     @State private var isSheet: Bool = false
+    @State private var agreementPersonalIsChecked: Bool = false
+    @State private var offerIsChecked: Bool = false
+    @State private var agreementPKIsChecked: Bool = false
+    @State private var isRegister: Bool = false
+    
+    
     
     @FocusState private var emailFocused: Bool
     @FocusState private var passwordFocused: Bool
@@ -27,20 +33,27 @@ struct RegistrationView: View {
     var body: some View {
         
         if isRegister {
-            VStack(spacing: 30) {
+            VStack(spacing: 8) {
                 Image(systemName: "exclamationmark.circle.fill")
-                    .offset(y: -8)
-                Text("Пользователь успешно зарегистрирован!")
+                    .padding(.bottom, 20)
+                Text("Заявка № ### принята.")
                     .customFont(font: FontManager.main, size: 17)
-                Text("Проверьте почту, что бы\nподтвердить Email!")
+                Text("Статус: на рассмотреннии.")
+                    .customFont(font: FontManager.main, size: 17)
+                
+                Text("Как только заявка будет одобрена, \nВаш личный профиль станет активным\n и Вы сможете начать принимать заказы.")
                     .customFont(font: FontManager.main, size: 17)
                     .multilineTextAlignment(.center)
+                    .padding(.top, 30)
             }
         } else {
             VStack {
-                HStack {
-                    Text("ВХОД В ЛИЧНЫЙ КАБИНЕТ")
+                VStack(spacing: 8) {
+                    Text("ЗАЯВКА")
                         .customFont(font: FontManager.main)
+                    Text("№ ###")
+                        .customFont(font: FontManager.main)
+                    
                 }
                 .padding(30)
                 
@@ -57,7 +70,7 @@ struct RegistrationView: View {
                         .disableAutocorrection(true)
                         .focused($emailFocused)
                     
-                    TextField("ПАРОЛЬ", text: $password)
+                    TextField("ИМЯ", text: $password)
                         .customFont(font: FontManager.Raleway.regular, size: 15)
                         .textContentType(.password)
                         .padding(.horizontal)
@@ -69,7 +82,7 @@ struct RegistrationView: View {
                         .disableAutocorrection(true)
                         .focused($passwordFocused)
                     
-                    TextField("ПОДТВЕРЖДЕНИЕ ПАРОЛЯ", text: $passwordConform)
+                    TextField("ФАМИЛИЯ", text: $passwordConform)
                         .customFont(font: FontManager.Raleway.regular, size: 15)
                         .textContentType(.newPassword)
                         .padding(.horizontal)
@@ -81,7 +94,7 @@ struct RegistrationView: View {
                         .disableAutocorrection(true)
                         .focused($passwordConformFocused)
                     
-                    TextField("ИМЯ", text: $name)
+                    TextField("ТЕЛЕФОН", text: $name)
                         .customFont(font: FontManager.Raleway.regular, size: 15)
                         .textContentType(.name)
                         .padding(.horizontal)
@@ -93,7 +106,7 @@ struct RegistrationView: View {
                         .disableAutocorrection(true)
                         .focused($nameFocused)
                     
-                    TextField("ФАМИЛИЯ", text: $lastName)
+                    TextField("СТРАНА", text: $lastName)
                         .customFont(font: FontManager.Raleway.regular, size: 15)
                         .textContentType(.familyName)
                         .padding(.horizontal)
@@ -105,7 +118,7 @@ struct RegistrationView: View {
                         .disableAutocorrection(true)
                         .focused($lastNameFocused)
                     
-                    TextField("ТЕЛЕФОН", text: $phoneNumber)
+                    TextField("ГОРОД", text: $phoneNumber)
                         .customFont(font: FontManager.Raleway.regular, size: 15)
                         .textContentType(.telephoneNumber)
                         .padding(.horizontal)
@@ -116,25 +129,65 @@ struct RegistrationView: View {
                         .textInputAutocapitalization(.never)
                         .disableAutocorrection(true)
                         .focused($phoneNumberFocused)
+                    
+                    HStack {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "icloud.and.arrow.up.fill")
+                                .foregroundColor(Color.gray)
+                            Text("Фото пасспорта")
+                                .customFont(font: FontManager.Raleway.bold, size: 15)
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                    .padding(30)
+                    
+                    VStack(alignment: .leading, spacing: 5) {
+                        
+                        Button {
+                            self.agreementPersonalIsChecked.toggle()
+                        } label: {
+                            Image(systemName: agreementPersonalIsChecked ? "checkmark.square.fill" : "square")
+                                .foregroundColor(.gray)
+                            Text("Соглашение на обработку персональных данных")
+                                .customFont(font: FontManager.Raleway.regular, size: 12)
+                        }
+                        
+                        Button {
+                            self.offerIsChecked.toggle()
+                        } label: {
+                            Image(systemName: offerIsChecked ? "checkmark.square.fill" : "square")
+                                .foregroundColor(.gray)
+                            Text("Договор оферты")
+                                .customFont(font: FontManager.Raleway.regular, size: 12)
+                        }
+                        
+                        Button {
+                            self.agreementPKIsChecked.toggle()
+                        } label: {
+                            Image(systemName: agreementPKIsChecked ? "checkmark.square.fill" : "square")
+                                .foregroundColor(.gray)
+                            Text("Соглашение ПК")
+                                .customFont(font: FontManager.Raleway.regular, size: 12)
+                        }
+                    }
                 }
                 .padding()
                 
                 Button {
-                    isRegister = true
-                    print(isRegister)
+                    isRegister.toggle()
                 } label: {
                     MainButtonView(title: "Регистрация")
                 }
-                .padding(.top, 40)
             }
             .navigationBarBackButtonHidden(true)
         }
     }
 }
 
-
-struct RegistrationView_Previews: PreviewProvider {
+struct BuyerView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistrationView()
+        BuyerAcceptView()
     }
 }

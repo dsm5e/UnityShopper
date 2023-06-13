@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MakeOrderAdressView: View {
+    @Environment(\.dismiss) var dismiss
     @State private var isComleted: Bool = false
     @State private var email: String = ""
     @State private var password: String = ""
@@ -15,7 +16,6 @@ struct MakeOrderAdressView: View {
     @State private var name: String = ""
     @State private var lastName: String = ""
     @State private var phoneNumber: String = ""
-    @State private var isSheet: Bool = false
     
     @FocusState private var emailFocused: Bool
     @FocusState private var passwordFocused: Bool
@@ -36,14 +36,16 @@ struct MakeOrderAdressView: View {
                     .customFont(font: FontManager.main, size: 17)
                     .multilineTextAlignment(.center)
             }
+            .navigationBarBackButtonHidden(false)
         } else {
             VStack {
-                HStack {
-                    Text("АДРЕС ДОСТАВКИ \n№ # # #")
+                VStack {
+                    Text("АДРЕС ДОСТАВКИ")
                         .customFont(font: FontManager.main)
-                        .multilineTextAlignment(.center)
+                    Text("№ # # #")
+                        .customFont(font: FontManager.main)
                 }
-                .padding(30)
+                .padding(15)
                 
                 VStack {
                     TextField("СТРАНА", text: $email)
@@ -142,14 +144,22 @@ struct MakeOrderAdressView: View {
                 }
                 .padding()
                 
-                NavigationLink {
-                    HomeView()
+                Button {
+                    isComleted.toggle()
                 } label: {
                     MainButtonView(title: "ОФОРМИТЬ",size: 120)
                 }
                 .padding(.top, 40)
+                Button {
+                    dismiss()
+                } label: {
+                    Text("назад")
+                        .customFont(font: FontManager.main, size: 15)
+                }
+                .padding(.top, 10)
+                Spacer()
             }
-            
+            .navigationBarBackButtonHidden(false)
         }
     }
 }

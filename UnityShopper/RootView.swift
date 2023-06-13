@@ -17,18 +17,30 @@ struct RootView: View {
     @State private var selectedTab = "Home"
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                Header()
-                TabBar(selectedTab: $selectedTab)
-            }
+        VStack {
+            Image("USLogo")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 60, alignment: .center)
+                .frame(maxWidth: .infinity)
+            TabBar(selectedTab: $selectedTab)
         }
     }
 }
 
 struct Header: View {
+    @Environment(\.dismiss) var dismiss
+    @State var isRootView: Bool = true
+    
     var body: some View {
+        
         ZStack {
+            Button {
+                dismiss()
+            } label: {
+                Image(systemName: "chevron.left")
+            }
+            .padding(.trailing, 300)
             Image("USLogo")
                 .resizable()
                 .scaledToFit()
@@ -37,6 +49,8 @@ struct Header: View {
         }
     }
 }
+
+
 
 struct TabBar: View {
     
@@ -95,8 +109,6 @@ struct TabBar: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
-            RootView()
-        }
+        RootView()
     }
 }

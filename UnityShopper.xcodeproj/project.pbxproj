@@ -44,7 +44,7 @@
 		3C88D86B2A2E82A200B8F8D1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D86A2A2E82A200B8F8D1 /* OrderView.swift */; };
 		3C88D86D2A2E82AE00B8F8D1 /* SelectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D86C2A2E82AE00B8F8D1 /* SelectionsView.swift */; };
 		3C88D86F2A2E82B700B8F8D1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D86E2A2E82B700B8F8D1 /* ProfileView.swift */; };
-		3CA2AA622A37784E004EB7B2 /* BuyerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA612A37784E004EB7B2 /* BuyerView.swift */; };
+		3CA2AA622A37784E004EB7B2 /* BuyerAcceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA612A37784E004EB7B2 /* BuyerAcceptView.swift */; };
 		3CA2AA642A37785E004EB7B2 /* StylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA632A37785E004EB7B2 /* StylistView.swift */; };
 		3CA2AA662A37786E004EB7B2 /* GiftCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA652A37786E004EB7B2 /* GiftCardView.swift */; };
 		3CA2AA6A2A379502004EB7B2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA692A379502004EB7B2 /* LoginView.swift */; };
@@ -54,6 +54,9 @@
 		3CA2AA782A37C4E3004EB7B2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA772A37C4E3004EB7B2 /* RegistrationView.swift */; };
 		3CA2AA7B2A37D32B004EB7B2 /* MakeOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA7A2A37D32B004EB7B2 /* MakeOrderView.swift */; };
 		3CA2AA7D2A37D6B0004EB7B2 /* MakeOrderAdressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2AA7C2A37D6B0004EB7B2 /* MakeOrderAdressView.swift */; };
+		3CB0E90B2A38E26200183083 /* BuyerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0E90A2A38E26200183083 /* BuyerView.swift */; };
+		3CB0E90E2A3929B800183083 /* RateOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0E90D2A3929B800183083 /* RateOneView.swift */; };
+		3CB0E9102A3929C200183083 /* RateTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0E90F2A3929C200183083 /* RateTwoView.swift */; };
 		3CD31E522A2FF19600021255 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD31E512A2FF19600021255 /* HomeTabView.swift */; };
 		3CFEDBA62A375BD4009470DA /* HomeTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEDBA52A375BD4009470DA /* HomeTabs.swift */; };
 /* End PBXBuildFile section */
@@ -98,7 +101,7 @@
 		3C88D86A2A2E82A200B8F8D1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		3C88D86C2A2E82AE00B8F8D1 /* SelectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionsView.swift; sourceTree = "<group>"; };
 		3C88D86E2A2E82B700B8F8D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		3CA2AA612A37784E004EB7B2 /* BuyerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerView.swift; sourceTree = "<group>"; };
+		3CA2AA612A37784E004EB7B2 /* BuyerAcceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerAcceptView.swift; sourceTree = "<group>"; };
 		3CA2AA632A37785E004EB7B2 /* StylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylistView.swift; sourceTree = "<group>"; };
 		3CA2AA652A37786E004EB7B2 /* GiftCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardView.swift; sourceTree = "<group>"; };
 		3CA2AA692A379502004EB7B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -108,6 +111,9 @@
 		3CA2AA772A37C4E3004EB7B2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		3CA2AA7A2A37D32B004EB7B2 /* MakeOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderView.swift; sourceTree = "<group>"; };
 		3CA2AA7C2A37D6B0004EB7B2 /* MakeOrderAdressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderAdressView.swift; sourceTree = "<group>"; };
+		3CB0E90A2A38E26200183083 /* BuyerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerView.swift; sourceTree = "<group>"; };
+		3CB0E90D2A3929B800183083 /* RateOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateOneView.swift; sourceTree = "<group>"; };
+		3CB0E90F2A3929C200183083 /* RateTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTwoView.swift; sourceTree = "<group>"; };
 		3CD31E512A2FF19600021255 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		3CFEDBA52A375BD4009470DA /* HomeTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -296,8 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				3CA2AA792A37D318004EB7B2 /* OrderView */,
-				3CA2AA612A37784E004EB7B2 /* BuyerView.swift */,
-				3CA2AA632A37785E004EB7B2 /* StylistView.swift */,
+				3CB0E9092A38E24900183083 /* BuyerView */,
+				3CB0E90C2A39217700183083 /* StylistView */,
 				3CA2AA652A37786E004EB7B2 /* GiftCardView.swift */,
 			);
 			path = HomeTabsView;
@@ -330,6 +336,25 @@
 				3CA2AA7C2A37D6B0004EB7B2 /* MakeOrderAdressView.swift */,
 			);
 			path = OrderView;
+			sourceTree = "<group>";
+		};
+		3CB0E9092A38E24900183083 /* BuyerView */ = {
+			isa = PBXGroup;
+			children = (
+				3CB0E90A2A38E26200183083 /* BuyerView.swift */,
+				3CA2AA612A37784E004EB7B2 /* BuyerAcceptView.swift */,
+			);
+			path = BuyerView;
+			sourceTree = "<group>";
+		};
+		3CB0E90C2A39217700183083 /* StylistView */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2AA632A37785E004EB7B2 /* StylistView.swift */,
+				3CB0E90D2A3929B800183083 /* RateOneView.swift */,
+				3CB0E90F2A3929C200183083 /* RateTwoView.swift */,
+			);
+			path = StylistView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,16 +453,19 @@
 				3C1197DD2A325B3700874341 /* Colors.swift in Sources */,
 				3C1197DF2A325BC000874341 /* Icons.swift in Sources */,
 				3CFEDBA62A375BD4009470DA /* HomeTabs.swift in Sources */,
+				3CB0E9102A3929C200183083 /* RateTwoView.swift in Sources */,
 				3CD31E522A2FF19600021255 /* HomeTabView.swift in Sources */,
 				3CA2AA742A37B236004EB7B2 /* MainButtonView.swift in Sources */,
 				3C88D8652A2E7DD400B8F8D1 /* SplashScreen.swift in Sources */,
 				3C88D8692A2E829600B8F8D1 /* HomeView.swift in Sources */,
+				3CB0E90E2A3929B800183083 /* RateOneView.swift in Sources */,
 				3C1197DB2A32564900874341 /* TabBarModel.swift in Sources */,
 				3CA2AA7B2A37D32B004EB7B2 /* MakeOrderView.swift in Sources */,
 				3C88D84C2A2E7D2C00B8F8D1 /* RootView.swift in Sources */,
 				3C1197D12A32488800874341 /* FontManager.swift in Sources */,
-				3CA2AA622A37784E004EB7B2 /* BuyerView.swift in Sources */,
+				3CA2AA622A37784E004EB7B2 /* BuyerAcceptView.swift in Sources */,
 				3CA2AA702A37AADB004EB7B2 /* ForgotPasswordView.swift in Sources */,
+				3CB0E90B2A38E26200183083 /* BuyerView.swift in Sources */,
 				3CA2AA782A37C4E3004EB7B2 /* RegistrationView.swift in Sources */,
 				3C88D84A2A2E7D2C00B8F8D1 /* UnityShopperApp.swift in Sources */,
 				3C88D86F2A2E82B700B8F8D1 /* ProfileView.swift in Sources */,

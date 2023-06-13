@@ -12,9 +12,7 @@ struct UnityShopperApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
                 SplashScreen()
-            }
         }
     }
 }

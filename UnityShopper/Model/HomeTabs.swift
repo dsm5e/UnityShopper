@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 enum HomeTabs: String, CaseIterable, Hashable {
-    case order = "About"
-    case buyer = "Help"
-    case stylyst = "Contact"
-    case giftCard = "Credits"
+    case order = "Order"
+    case buyer = "Buyer"
+    case stylyst = "Stylist"
+    case giftCard = "giftCard"
     
     var image: String {
         switch self {
@@ -45,12 +45,16 @@ enum HomeTabs: String, CaseIterable, Hashable {
         switch self {
         case .order:
             OrderView()
+                .navigationBarBackButtonHidden(true)
         case .buyer:
             BuyerView()
+                .navigationBarBackButtonHidden(true)
         case .stylyst:
             StylistView()
+                .navigationBarBackButtonHidden(true)
         case .giftCard:
             GiftCardView()
+                .navigationBarBackButtonHidden(true)
         }
     }
 }

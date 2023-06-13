@@ -11,13 +11,15 @@ struct HomeTabView: View {
     
     @State var title: String
     @State var image: String
-    @State var height: CGFloat = 145
+    @State var height: CGFloat = 150
     
     var body: some View {
         Image(image)
             .resizable()
+            .scaledToFill()
             .frame(height: height)
             .cornerRadius(15)
+            .shadow(color: .black.opacity(0.1), radius: 2)
             .overlay(alignment: .bottomLeading, content: {
                 Text(title.uppercased())
                     .foregroundColor(.white)
